@@ -18,17 +18,17 @@ class App extends Component {
       {
         "firstName": "will",
         "lastName": "palafox",
-        "username": "wpalafox"
+        "userName": "wpalafox"
       },
       {
         "firstName": "nestor",
         "lastName": "islas",
-        "username": "neggstor"
+        "userName": "neggstor"
       },
       {
         "firstName": "son",
         "lastName": "truong",
-        "username": "sun"
+        "userName": "sun"
       }
     ]
 }
@@ -51,7 +51,7 @@ render() {
         <h1 className="App-title">Gamerz</h1>
         <Form/>
         
-        <List />
+        <List gamerz={this.state.gamerz} />
       
       
       
