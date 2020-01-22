@@ -5,9 +5,9 @@ export default function ListItem(props) {
         <div className="container">
             
             <li className="gamer-item">
-                <p>{props.firstName}</p>
-                <p>{props.lastName}</p>
-                <p>{props.userName}</p>
+                <p>{props.firstName} {props.lastName} || {props.userName}</p>
+             
+           
                
             </li>
 

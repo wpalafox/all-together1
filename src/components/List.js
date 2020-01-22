@@ -7,8 +7,8 @@ export default class List extends Component {
         const { gamerz } = this.props
         return (
             <div>
-                List of Gamers
-                <ol className='gamer-list'>
+                <h2>List of Gamerz</h2>
+                <ul className='gamer-list'>
                     {gamerz.map((gamer) => (
                   
                         <ListItem 
@@ -21,7 +21,7 @@ export default class List extends Component {
 
 
                     }
-                </ol>
+                </ul>
                 
             </div>
         )

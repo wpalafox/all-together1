@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Form from './components/Form.js'
 import List from './components/List.js'
+import UserInput from './components/UserInput.js'
 
 
 /*
@@ -16,26 +16,41 @@ class App extends Component {
   state = { 
     gamerz: [
       {
-        "firstName": "will",
-        "lastName": "palafox",
-        "userName": "wpalafox"
+        firstName: "will",
+        lastName: "palafox",
+        userName: "wpalafox",
+        games: 0,
       },
       {
-        "firstName": "nestor",
-        "lastName": "islas",
-        "userName": "neggstor"
+        firstName: "nestor",
+        lastName: "islas",
+        userName: "neggstor",
+        games: 0,
       },
       {
-        "firstName": "son",
-        "lastName": "truong",
-        "userName": "sun"
+        firstName: "son",
+        lastName: "truong",
+        userName: "sun",
+        games: 0
+      },
+      {
+        firstName: "maria",
+        lastName: "hernandez",
+        userName: "mhernandez",
+        games: 0
       }
     ]
 }
 
+  //Create a method for adding Gamers into the gamerz array
+
+addGamer = (gamer) => {
+  console.log(gamer);
+ /* this.setState((currentState) => ({
+    
+  })) */
   
-
-
+}
 
 
 
@@ -48,14 +63,12 @@ class App extends Component {
 render() {
     return (
       <div className="App">
+
+       <div className="container">
         <h1 className="App-title">Gamerz</h1>
-        <Form/>
-        
+        <UserInput addGamer={this.addGamer}/>
         <List gamerz={this.state.gamerz} />
-      
-      
-      
-      
+        </div> 
       
       </div>
     );
